@@ -1,5 +1,5 @@
-local telescope_builtin = require("telescope.builtin")
-local silent = { silent = true }
+-- local telescope_builtin = require("telescope.builtin")
+-- local silent = { silent = true }
 
 require("telescope").setup({
   defaults = {

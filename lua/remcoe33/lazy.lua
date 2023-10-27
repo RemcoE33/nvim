@@ -89,7 +89,7 @@ require("lazy").setup({
   { "kylechui/nvim-surround" },
 	{ "folke/todo-comments.nvim", dependencies = "nvim-lua/plenary.nvim" },
   { "vimwiki/vimwiki" },
-
+  { "github/copilot.vim" },
   -- looks
   {
     "folke/noice.nvim",
@@ -97,6 +97,6 @@ require("lazy").setup({
   },
   { "laytan/cloak.nvim" },
   { "nvim-lualine/lualine.nvim" },
-  { "lukas-reineke/indent-blankline.nvim" },
+  -- { "lukas-reineke/indent-blankline.nvim" },
   { "navarasu/onedark.nvim" },
 })

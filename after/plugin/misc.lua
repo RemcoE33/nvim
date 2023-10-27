@@ -49,13 +49,13 @@ vim.g["mkdp_theme"] = "light"
 local spectre = require("spectre")
 spectre.setup()
 
-require("ibl").setup({
-  debounce = 100,
-  indent = { char = "|" },
-  whitespace = { highlight = { "Whitespace", "NonText" } },
-  scope = { enable = true },
-  smart_indent_caps = false,
-})
+-- require("ibl").setup({
+--   debounce = 100,
+--   indent = { char = "|" },
+--   whitespace = { highlight = { "Whitespace", "NonText" } },
+--   scope = { enable = true },
+--   smart_indent_caps = false,
+-- })
 
 -- keymaps
 nnoremap("<leader>s", spectre.open)
