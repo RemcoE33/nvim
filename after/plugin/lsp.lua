@@ -38,7 +38,6 @@ lsp.format_mapping("<leader>m", {
       "css",
       "sass",
       "scss",
-      "txt",
       "text",
     },
   },
