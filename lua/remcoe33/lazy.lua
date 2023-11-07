@@ -44,6 +44,15 @@ require("lazy").setup({
   -- language specific plugins
   { "fatih/vim-go" },
   { "memgraph/cypher.vim" }, -- cypher syntax
+  {
+    "folke/trouble.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    opts = {
+      multiline = true,
+      position = "bottom", -- position of the list can be: bottom, top, left, right
+      height = 10, -- height of the trouble list when position is top or bottom
+    },
+  },
 
   -- nice to have
   { "numToStr/Comment.nvim" },
@@ -87,7 +96,7 @@ require("lazy").setup({
   { "uga-rosa/ccc.nvim" },
   { "nvim-pack/nvim-spectre" },
   { "kylechui/nvim-surround" },
-	{ "folke/todo-comments.nvim", dependencies = "nvim-lua/plenary.nvim" },
+  { "folke/todo-comments.nvim", dependencies = "nvim-lua/plenary.nvim" },
   { "vimwiki/vimwiki" },
   { "github/copilot.vim" },
   -- looks
