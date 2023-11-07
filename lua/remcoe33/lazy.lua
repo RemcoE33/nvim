@@ -97,6 +97,5 @@ require("lazy").setup({
   },
   { "laytan/cloak.nvim" },
   { "nvim-lualine/lualine.nvim" },
-  -- { "lukas-reineke/indent-blankline.nvim" },
   { "navarasu/onedark.nvim" },
 })

@@ -43,19 +43,11 @@ require("cloak").setup()
 require("ccc").setup()
 require("harpoon").setup()
 
--- vim.g["mkdp_markdown_css"] = vim.fn.expand("~/.config/nvim/md.css")
 vim.g["mkdp_theme"] = "light"
 
 local spectre = require("spectre")
 spectre.setup()
 
--- require("ibl").setup({
---   debounce = 100,
---   indent = { char = "|" },
---   whitespace = { highlight = { "Whitespace", "NonText" } },
---   scope = { enable = true },
---   smart_indent_caps = false,
--- })
 
 -- keymaps
 nnoremap("<leader>s", spectre.open)
@@ -65,8 +57,6 @@ nnoremap("<leader>gg", "<Cmd>LazyGit<CR>", silent)
 nnoremap("<leader>co", "<Cmd>CccPick<CR>", silent)
 nnoremap("<leader>cc", "<Cmd>CccHighlighterToggle<CR>", silent)
 nnoremap("<leader>cv", "<Cmd>CccConvert<CR>", silent)
-nnoremap("<leader>oo", "<Cmd>TodoClose<CR>", silent)
-nnoremap("<leader>ol", "<Cmd>TodoOpenFileList<CR>", silent)
 
 for i = 1, 10 do
   nnoremap("<leader>o" .. i % 10, "<Cmd>TodoOpenIndex " .. i .. "<CR>", silent)
